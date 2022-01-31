@@ -21,7 +21,15 @@ function RGB() {
 }
 
 function ScreenColor() {
-  return <div>{/* Create Route Inside Switch */}</div>;
+  return (
+    <div>
+      <Switch>
+        <Route path="/rgb/:r/:g/:b">
+          <RGB />
+        </Route>
+      </Switch>
+    </div>
+  );
 }
 
 export default function App() {
